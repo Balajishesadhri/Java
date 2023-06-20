@@ -5,9 +5,18 @@ public class StringDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 StringDemo st = new StringDemo();
-st.check_start();
-		st.End_with();
-	}private void End_with() {
+//st.check_start();
+//st.End_with();
+st.spilt();
+	}
+	private void spilt() {
+		// TODO Auto-generated method stub
+		String date = "30/05/2023";
+	    String[] ds = date.split("/");
+	    for(int i=0;i<ds.length;i++)
+	      System.out.println(ds[i]);
+	}
+	private void End_with() {
 		// TODO Auto-generated method stub
 		
 		String name1 = "sabaribala";
@@ -33,6 +42,7 @@ st.check_start();
 		  System.out.println("yes, ends with "+name2);
 		}
 		  }
+	
 	private void check_start() {
 	    // TODO Auto-generated method stub
 	    String name1 = "sabaribala";
