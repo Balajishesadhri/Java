@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html   xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf Basic</title>
+
+</head>
+<body>
+<div style="background-color: blue; color: black;">
+	<h2 th:text="${temp}"> </h2>
+	<h2 th:if="${flag==true}"> Display this msg if flag is true </h2>
+	  
+	  <talbe>
+		  <th>
+			  <td>Emp name</td>
+		  </th>
+		  <tr th:each="emp:${emp}">
+			  <td th:text="${emp}"></td>
+		  </tr>
+	  </talbe>
+</div>
+</body>
+</html>
